@@ -1,0 +1,19 @@
+# config/docker-compose.yml
+version: "3"
+services:
+  your-app-name:
+    build: .
+    ports:
+      - "3000:3000"
+    depends_on:
+      - redis
+      - mysql
+  redis:
+    image: "redis:latest"
+  mysql:
+    image: "mysql:latest"
+    environment:
+      MYSQL_ROOT_PASSWORD: "example"            # Replace with the actual MySQL root password
+      MYSQL_DATABASE: "my_whatsapp_chat_db"     # Replace with the actual MySQL database name
+      MYSQL_USER: "app_user"                    # Replace with the actual MySQL username
+      MYSQL_PASSWORD: "app_password"            # Replace with the actual MySQL password

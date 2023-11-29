@@ -1,0 +1,19 @@
+{
+  "name": "your-app-name",
+  "version": "1.0.0",
+  "description": "Your application description",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "redis": "^3.0.2",
+    "knex": "^0.21.18",
+    "mysql2": "^2.3.0",
+    "axios": "^0.21.1"
+  }
+}
